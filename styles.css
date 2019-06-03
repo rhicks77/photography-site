@@ -1,0 +1,42 @@
+h2 {
+    color: #a41616;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-image: url(images/background.jpg);
+    box-shadow: #a41616 5px 10px;
+    margin-top: 5px;
+    float: left; 
+}
+.row {
+     margin-bottom: 15px;
+}
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+img {
+    border: #a41616 solid 2px;
+    height: 200px;
+    width: 200px;
+}
+img:hover {
+    box-shadow: 5px 8px #8785856a;    
+}
+form h3 {
+    color: #a41616;
+    text-align: center;
+}
+form {
+    background-color: #8785856a;
+}
+.form-row {
+    padding: 10px; 
+}
+.btn-primary {
+    background-color: #a41616;
+    margin-bottom: 15px;
+}
+
