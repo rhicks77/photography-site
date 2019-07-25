@@ -177,12 +177,16 @@ const submit=()=>{
     console.log('submit was clicked');
     let firstName=document.getElementById('first-name').value;
     let lastName=document.getElementById('last-name').value;
+    let email=document.getElementById('email').value;
     let boxText=document.querySelector('p');
     if(firstName===""){
-        boxText.textContent='Please enter your name.';
+        boxText.innerHTML='Please enter your name.';
         dialogBox.style.display='block';
     }else if(lastName===""){
-        boxText.textContent='Please enter your last name.';
+        boxText.innerHTML='Please enter your last name.';
+        dialogBox.style.display='block';
+    }else if(email===""){
+        boxText.innerHTML='Please enter your email.';
         dialogBox.style.display='block';
     }else {
         boxText.innerHTML=
@@ -190,6 +194,7 @@ const submit=()=>{
              <p>Thank you ${firstName} ${lastName}! We'll be in touch!</p>`
         dialogBox.style.display='block';
     }
+    
     
 }
 document.getElementById('button').addEventListener('click', submit)
